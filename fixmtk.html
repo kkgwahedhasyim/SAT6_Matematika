@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>SAT Matematika SD - KKG Wahed Hasyim</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUwSURBVHgB7Z1LbFxFFIafc+9tOx5CmiZVhVYIUilCQmyyACGKBRKiC2qBEBtYIaEsWLBgQUISKxYgQQAlCxYsYIEiFhWhgIRQEgJChaSqQgJqkzZAwjQYz+OYe2eBmUynPbZnus/M/b9kprn3zPnPd/85c+beaUCrVasV0A4QDoNwqMfj8UYikUgpMzMzA9///v3Rf9u2baN8Pk/tdpu6XWl2dlbr9bpKpVJ6NptNesMwDpumaR4bG3svlUp9UF9f/1ZNTc0H09PTVC6XqdlsUqfToW63S0IIkqSIJEk0Pz9PoVCIhBCkaZqUy+VUuVymYrEowlGtVkcmk0kZhmEUCgWVy+XU7/dFb2ZmhoLB4MiyLErLsvh6vV4aDAbD169fvxYOh9+bnZ39YGVlZWx4ePh7qVTq4GAwoFarRZVKhQzDoHw+T5lMhqrVKmmaxo+/KMsyBQIBevHFFykajZIkSSRJEvV6PUqlUtRqtSiXy4lwZDKZkWmaYpBzc3MVi8ViZFlWDIdhGJZlGcMQBXEcx0mhB1JXV1f3JMuycF2XbNsm27YpFouRpml8TgYGBqihoYFaW1upra2N2tvbqbW1lf/xeDzU0dFBnZ2d1N3dTQghhBAPYhiGYRiGYRgMwzAMwzAMw2AYhsEwDINhGAbDMAyDYRgGwzAMg2EYBsM0DIZhGAzDMAiCIAiCIAjDMAiCIAiCIAiDMAiDMAiDMAiDMEgQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBMEgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIguLKyQrOzsxSPxykWi1EsFqObN29SKBTCQRCGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRhcXFykcDgslmVZqVarUafTIT/r16+XLMsiy7Ko3++TpmnU6/Wk8fFx0jSN4vE41Wo1Gg6HJAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIBgMBAK0YcMG2rZtGwmCop///Oc0OjoqhkEQhEEYBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBAOBAD3yyCP0+OOPiyAIwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMgyAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgkkQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQnJanTtH09DRpmjaeSqUoGAyOi8WiGAbBIAzCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAjCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIPj/UPxj5coYKEdIx44AAAAASUVORK5CYII=">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2-fix@0.0.1/qrcode.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); min-height: 100vh; }
+        .login-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .login-card { background: white; border-radius: 20px; padding: 40px; width: 100%; max-width: 450px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); text-align: center; }
+        .login-logo { width: 100px; height: 100px; background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-weight: bold; font-size: 1rem; text-align: center; line-height: 1.3; padding: 10px; }
+        .login-card h2 { color: #1e3c72; margin-bottom: 5px; }
+        .login-subtitle { color: #666; margin-bottom: 20px; font-size: 0.85rem; }
+        .login-card input { width: 100%; padding: 12px 15px; margin: 10px 0; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem; }
+        .login-card input:focus { border-color: #1e3c72; outline: none; }
+        .login-btn { width: 100%; padding: 12px; background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: bold; cursor: pointer; margin-top: 20px; }
+        .login-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .error-msg { color: #e74c3c; text-align: center; margin-top: 15px; font-size: 0.9rem; }
+        .loading-spinner { display: inline-block; width: 20px; height: 20px; border: 3px solid #f3f3f3; border-top: 3px solid #1e3c72; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 10px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .app-container { display: none; max-width: 1400px; margin: 20px auto; background: #f0f4f8; border-radius: 20px; overflow: hidden; }
+        .header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo-area { display: flex; align-items: center; gap: 15px; }
+        .logo-img { width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: bold; text-align: center; font-size: 0.7rem; line-height: 1.2; }
+        .title h1 { font-size: 1.3rem; margin-bottom: 3px; }
+        .title p { font-size: 0.7rem; opacity: 0.9; }
+        .user-info { display: flex; gap: 20px; align-items: center; }
+        .logout-btn { background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+        .dashboard { background: white; margin: 20px; border-radius: 15px; padding: 25px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 20px; border-radius: 15px; text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: bold; }
+        .result-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .result-table th, .result-table td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        .result-table th { background: #f0f4f8; color: #1e3c72; }
+        .btn-primary { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin: 5px; }
+        .btn-secondary { background: #6c757d; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin: 5px; }
+        .btn-danger { background: #e74c3c; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .btn-success { background: #27ae60; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .exam-area { display: none; }
+        .info-panel { background: white; padding: 15px 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; border-bottom: 1px solid #e0e0e0; }
+        .progress-bar .bar { background: #e0e0e0; border-radius: 10px; height: 10px; overflow: hidden; margin-top: 5px; width: 300px; }
+        .progress-bar .fill { background: linear-gradient(90deg, #2ecc71, #27ae60); width: 0%; height: 100%; transition: width 0.3s; }
+        .timer-box { background: #1e3c72; color: white; padding: 10px 20px; border-radius: 50px; text-align: center; }
+        .timer { font-size: 1.8rem; font-weight: bold; font-family: monospace; }
+        .timer.warning { color: #ff6b6b; animation: blink 1s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .nav-section { background: white; padding: 15px 30px; border-bottom: 1px solid #e0e0e0; }
+        .level-title { font-size: 0.9rem; font-weight: 600; margin: 10px 0 5px; }
+        .nav-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+        .nav-btn { width: 45px; height: 45px; border-radius: 10px; border: 2px solid #ddd; background: white; font-weight: bold; cursor: pointer; }
+        .nav-btn.answered { background: #2ecc71; color: white; }
+        .nav-btn.current { background: #f39c12; color: white; }
+        .nav-btn.marked { background: #e74c3c; color: white; }
+        .question-area { background: white; margin: 20px 30px; border-radius: 15px; padding: 25px; }
+        .question-image { max-width: 100%; max-height: 300px; object-fit: contain; margin: 15px 0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .reading-text { background: #fef9e6; border-left: 5px solid #f39c12; padding: 15px; margin-bottom: 20px; border-radius: 8px; font-size: 0.9rem; line-height: 1.5; max-height: 250px; overflow-y: auto; white-space: pre-line; }
+        .question-text { font-weight: bold; font-size: 1.1rem; margin: 15px 0; padding: 10px; background: #f0f4f8; border-radius: 8px; }
+        .option { margin: 12px 0; padding: 12px; background: #f8f9fa; border-radius: 10px; cursor: pointer; border: 2px solid transparent; transition: all 0.2s ease; }
+        .option.selected { background: #d4edda; border-color: #2ecc71; }
+        .pgk-option { margin: 10px 0; padding: 10px; background: #f1f9ff; border-radius: 8px; cursor: pointer; border: 1px solid #cce5ff; display: flex; align-items: center; gap: 10px; transition: all 0.2s ease; }
+        .pgk-option.selected { background: #cce5ff; border-color: #1e3c72; border-width: 2px; }
+        .truefalse-btn { display: inline-block; margin: 5px 10px; padding: 8px 20px; border-radius: 30px; cursor: pointer; border: none; font-weight: bold; transition: all 0.2s ease; }
+        .truefalse-true { background: #d4edda; color: #155724; }
+        .truefalse-false { background: #f8d7da; color: #721c24; }
+        .truefalse-selected { box-shadow: 0 0 0 2px #1e3c72; transform: scale(1.02); }
+        .control-buttons { display: flex; justify-content: center; gap: 15px; margin: 20px 30px 30px; flex-wrap: wrap; }
+        .control-btn { padding: 12px 25px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; transition: transform 0.1s ease; }
+        .control-btn:active { transform: scale(0.97); }
+        .control-btn.prev { background: #6c757d; color: white; }
+        .control-btn.next { background: #1e3c72; color: white; }
+        .control-btn.mark { background: #e74c3c; color: white; }
+        .control-btn.finish { background: #27ae60; color: white; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 1000; }
+        .modal-content { background: white; border-radius: 20px; padding: 30px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; }
+        .violation-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #e74c3c; color: white; padding: 12px 24px; border-radius: 50px; font-weight: bold; z-index: 2000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); animation: fadeInOut 2s ease forwards; }
+        .success-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #27ae60; color: white; padding: 12px 24px; border-radius: 50px; font-weight: bold; z-index: 2000; box-shadow: 0 4px 12px rgba(0,0,0,0.3); animation: fadeInOut 3s ease forwards; }
+        @keyframes fadeInOut { 0% { opacity: 0; transform: translateX(-50%) translateY(20px); } 15% { opacity: 1; transform: translateX(-50%) translateY(0); } 85% { opacity: 1; transform: translateX(-50%) translateY(0); } 100% { opacity: 0; transform: translateX(-50%) translateY(-20px); visibility: hidden; } }
+        .info-ujian { background: #e8f5e9; border-radius: 10px; padding: 12px; margin-bottom: 15px; text-align: center; font-size: 0.9rem; color: #2e7d32; }
+        .warning-text { background: #fff3e0; border-left: 5px solid #ff9800; padding: 10px; margin-top: 15px; border-radius: 8px; }
+        @media (max-width: 768px) { .nav-btn { width: 38px; height: 38px; } .question-area { margin: 15px; padding: 15px; } }
+    </style>
+</head>
+<body>
+
+<div class="login-container" id="loginPage">
+    <div class="login-card">
+        <div class="login-logo">KKG<br>WAHED<br>HASYIM</div>
+        <h2>📐 SAT Matematika SD</h2>
+        <div class="login-subtitle">SAT Matematika | Kelas 6 | KKG Wahed Hasyim</div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="password" placeholder="Password">
+        <button class="login-btn" onclick="login()" id="loginBtn">Masuk & Mulai Ujian</button>
+        <div id="loginError" class="error-msg"></div>
+        <div style="margin-top: 20px; font-size: 0.7rem; text-align: center; color: #666; background: #f0f4f8; padding: 10px; border-radius: 10px;">
+            <strong>📋 Informasi Login Demo:</strong><br>• Siswa: Login dengan username dan password dari guru
+         </div>
+    </div>
+</div>
+
+<div class="app-container" id="appContainer">
+    <div class="header">
+        <div class="logo-area">
+            <div class="logo-img">KKG<br>WAHED<br>HASYIM</div>
+            <div class="title"><h1>📐 SAT Matematika SD</h1><p>Tryout Matematika | Kelas 6 | KKG Wahed Hasyim</p></div>
+        </div>
+        <div class="user-info"><span id="displayName">👤 </span><span id="roleDisplay"></span><div class="logout-btn" onclick="logout()">🚪 Keluar</div></div>
+    </div>
+    <div id="guruDashboard" class="dashboard" style="display: none;">
+        <h2>📊 Dashboard Guru</h2>
+        <p>Selamat datang di panel guru SAT Matematika SD.</p>
+        <p>Untuk menambahkan data siswa, silakan hubungi administrator.</p>
+        <button class="btn-primary" onclick="logout()">Logout</button>
+    </div>
+    <div id="siswaDashboard" class="dashboard" style="display: none;">...</div>
+    <div id="examArea" class="exam-area">
+        <div class="info-panel"><div class="progress-bar"><div>📊 Progress:</div><div class="bar"><div class="fill" id="progressFill"></div></div></div><div class="timer-box"><div>⏱️ Sisa Waktu</div><div class="timer" id="timer">60:00</div></div></div>
+        <div class="nav-section"><div class="level-title">📚 Soal 1-15 (PG) | 16-25 (PGK) | 26-30 (Benar/Salah)</div><div class="nav-buttons" id="navAll"></div></div>
+        <div class="question-area" id="questionArea">
+            <div id="readingTextPanel" class="reading-text"></div>
+            <div id="questionImagePanel" style="text-align: center;"></div>
+            <div id="questionNumber" style="font-weight:bold; margin-bottom:5px;">Soal 1</div>
+            <div id="questionType" style="color:#666; margin-bottom:10px;"></div>
+            <div id="questionText" class="question-text"></div>
+            <div id="optionsArea"></div>
+        </div>
+        <div class="control-buttons"><button class="control-btn prev" id="prevBtn">◀ Sebelumnya</button><button class="control-btn next" id="nextBtn">Selanjutnya ▶</button><button class="control-btn mark" id="markBtn">🏷️ Tandai Soal</button><button class="control-btn finish" id="finishBtn">✓ Selesai</button></div>
+    </div>
+</div>
+<div class="modal" id="confirmModal"><div class="modal-content"><h3>✓ Konfirmasi Selesai</h3><p>Apakah Anda yakin ingin menyelesaikan ujian?</p><div id="confirmStats"></div><p style="color:red;">⚠️ Soal belum dijawab dianggap salah.</p><button class="btn-primary" id="confirmYes">Ya, Selesai</button><button class="btn-primary" id="confirmNo" style="background:#6c757d;">Batal</button></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+    const API_URL = "https://script.google.com/macros/s/AKfycbzFGXLZrUR027zKxbwuZR6M5rB5iapZ1AbtlwdqL_X25xFv7O38N9Nb71RJEroyLZCX/exec";
+    
+    // ==================== SOAL LENGKAP 30 BUTIR (DIPERBAIKI) ====================
+// Menggunakan gambar lokal PNG untuk setiap soal yang membutuhkan ilustrasi
+// Pastikan file-file gambar berikut tersedia di folder yang sama:
+// - gambar_soal_1.png
+// - gambar_soal_2.png  
+// - gambar_soal_3.png
+// - gambar_soal_4.png
+// - gambar_soal_5.png
+// - gambar_soal_6.png
+// - gambar_soal_7.png
+// - gambar_soal_8.png
+// - gambar_soal_9.png
+
+const questionsData = [
+    // No 1-15: PG biasa
+    {id:0, type:"pg", text:"Perhatikan gambar ini! Rony akan membuat sebuah bangun seperti pada gambar di atas. Banyak kubus yang diperlukan oleh Rony yaitu . . .", options:["5","6","7","8"], correct:["D"], gambar:"gambar_soal_1.png"},
+    {id:1, type:"pg", text:"Perhatikan gambar berikut! Tumpukan kardus di atas tersusun dari beberapa kardus identik. Banyak kardus identik yang ada pada tumpukan tersebut yaitu . . .", options:["15","14","13","12"], correct:["A"], gambar:"gambar_soal_2.png"},
+    {id:2, type:"pg", text:"Perhatikan pernyataan berikut!<br> a) Memiliki 8 rusuk<br> b) Memiliki 6 sisi<br> c) Sisinya berbentuk persegi<br> d) Memiliki 8 titik sudut.<br> Dari pernyataan di atas, yang termasuk ciri-ciri bangun ruang kubus adalah … .", options:["a, b dan c","a, b dan d","a, c dan d","b, c dan d"], correct:["D"], gambar:null},
+    {id:3, type:"pg", text:"Perhatikan gambar berikut! Banyak balok yang diperlukan untuk membentuk bangun di atas yaitu …", options:["14","15","16","17"], correct:["A"], gambar:"gambar_soal_3.png"},
+    {id:4, type:"pg", text:"Perhatikan gambar berikut! Banyak kubus satuan yang Menyusun bangun ruang di atas adalah …", options:["9","10","11","12"], correct:["B"], gambar:"gambar_soal_4.png"},
+    {id:5, type:"pg", text:"Perhatikan gambar berikut! Berikut pernyataan yang yang benar tentang bangun pada gambar … ", options:["terbuat dari 2 kubus","terbuat dari 3 kubus","terbuat dari 2 balok","terbuat dari 3 balok"], correct:["D"], gambar:"gambar_soal_5.png"},
+    {id:6, type:"pg", text:"Rini akan meletakkan 30 kardus yang berukuran 30 cm x 30 cm x 30 cm ke gudang yang berukuran 3 m x 3 m dan tinggi 3,5 m. Banyak kardus yang bisa ditumpuk setiap tumpukannya (maksimal) yaitu...", options:["11","12","13","14"], correct:["A"], gambar:null},
+    {id:7, type:"pg", text:"Perhatikan gambar berikut! Banyak kubus satuan yang menyusun bangun ruang di atasa adalah...", options:["24","36","48","72"], correct:["D"], gambar:"gambar_soal_6.png"},
+    {id:8, type:"pg", text:"Perhatikan gambar berikut! Sri berasal dari Kota Singaraja. Pada peta di atas, bahwa daerah asalnya terletak pada petak ...", options:["4,D","D,4","5,D","D,5"], correct:["B"], gambar:"gambar_soal_7.png"},
+    {id:9, type:"pg", text:"Perhatikan gambar berikut untuk menjawab soal nomor 10 - 12!<br> 10. Apotek terletak pada...", options:["3,-1","-1,-2","-2,2","2,3"], correct:["B"], gambar:"gambar_soal_8.png"},
+    {id:10, type:"pg", text:"Stasiun terletak pada...", options:["3,-1","-1,-2","2,3","-2,2"], correct:["C"], gambar:"gambar_soal_8.png"},
+    {id:11, type:"pg", text:"Jarak antara masjid dengan stasiun adalah... ", options:["4 langkah ke kanan, 2 langkah ke atas","2 langkah ke kanan, 4 langkah ke atas","2 langkah ke bawah, 5 langkah ke kanan","1 langkah ke kanan, 4 langkah ke atas"], correct:["C"], gambar:"gambar_soal_8.png"},
+    {id:12, type:"pg", text:"Perhatikan gambar berikut untuk menjawab soal nomor 13 – 15 !<br> Koordinat titik C adalah … . ", options:["2,5","5,2","-2,5","-5,2"], correct:["B"], gambar:"gambar_soal_9.png"},
+    {id:13, type:"pg", text:"Koordinat titik E adalah", options:["5,2","2,3","2,-6","-3,1"], correct:["C"], gambar:"gambar_soal_9.png"},
+    {id:14, type:"pg", text:"Jarak antara titik A ke titik H adalah ...", options:["3 langkah ke atas, 3 langkah ke kanan","3 langkah ke bawah, 3 langkah ke kiri","2 langkah ke bawah, 3 langkah ke kanan","2 langkah ke kanan, 4 langkah ke atas"], correct:["B"], gambar:"gambar_soal_9.png"},
+    // No 16-25: PGK (Pilihan Ganda Kompleks)
+    {id:15, type:"pgk", text:"Sebuah balok memiliki ukuran panjang 15 cm, lebar 8 cm, dan tinggi 6 cm. Berikut pernyataan yang benar adalah ...", options:["A. Volume balok adalah 720 cm³.","B. Luas permukaan balok adalah 516 cm².","C. Panjang semua rusuk balok adalah 116 cm.","D. Balok tersebut dapat menampung 720 ml air."], correct:["A","B","C"], gambar:null},
+    {id:16, type:"pgk", text:"Dalam sebuah tas terdapat 12 permen rasa stroberi, 8 permen rasa jeruk, dan 5 permen rasa apel. Jika diambil satu permen secara acak, manakah pernyataan yang benar?", options:["A. Peluang terambil permen stroberi adalah 12/25.","B. Peluang terambil permen jeruk lebih besar dari peluang terambil permen apel.","C. Peluang terambil permen apel adalah 1/5.","D. Peluang terambil permen stroberi atau jeruk adalah 4/5."], correct:["A","B","D"], gambar:null},
+    {id:17, type:"pgk", text:"Sebuah kubus memiliki volume 4.913 cm³. Sifat-sifat kubus tersebut adalah ...", options:["A. Panjang rusuknya 17 cm.","B. Luas alasnya 289 cm².","C. Luas permukaannya 1.734 cm².","D. Jumlah panjang seluruh rusuknya 206 cm."], correct:["A","B","C"], gambar:null},
+    {id:18, type:"pgk", text:"Berikut ini yang merupakan ciri-ciri bangun ruang balok adalah ...", options:["A. Memiliki 6 sisi berbentuk persegi panjang.","B. Memiliki 12 rusuk yang sama panjang.","C. Memiliki 8 titik sudut.","D. Memiliki 4 diagonal ruang."], correct:["A","C","D"], gambar:null},
+    {id:19, type:"pgk", text:"Sebuah dadu khusus berbentuk oktahedron (8 sisi) dengan sisi bernomor 1 sampai 8 dilempar. Pernyataan yang benar adalah ...", options:["A. Peluang muncul angka prima adalah 1/2.","B. Peluang muncul angka kelipatan 2 adalah 1/2.","C. Peluang muncul angka kurang dari 3 adalah 1/4.","D. Peluang muncul angka lebih dari 6 adalah 1/8."], correct:["A","B","C"], gambar:null},
+    {id:20, type:"pgk", text:"Lani ingin membuat kerangka balok dari kawat dengan ukuran 25 cm x 15 cm x 10 cm. Jika ia memiliki kawat sepanjang 2,5 meter, pernyataan berikut yang tepat adalah ...", options:["A. Panjang kawat yang dibutuhkan untuk satu kerangka balok adalah 200 cm.","B. Lani membutuhkan kawat sepanjang 2 meter untuk membuat satu kerangka.","C. Kawat yang dimiliki Lani cukup untuk membuat 1 kerangka.","D. Sisa kawat setelah membuat satu kerangka adalah 50 cm."], correct:["A","C","D"], gambar:null},
+    {id:21, type:"pgk", text:"Farrel melempar sebuah dadu sebanyak 24 kali. Berikut pernyataan yang sesuai dengan frekuensi harapan adalah ...", options:["A. Frekuensi harapan muncul mata dadu ganjil adalah 12 kali.","B. Frekuensi harapan muncul mata dadu kelipatan 3 adalah 4 kali.","C. Frekuensi harapan muncul mata dadu prima adalah 14 kali.","D. Frekuensi harapan muncul mata dadu 5 adalah 4 kali."], correct:["A","B","D"], gambar:null},
+    {id:22, type:"pgk", text:"Di dalam sebuah kotak terdapat 12 kelereng yang terdiri dari: 6 kelereng berwarna Biru, 4 kelereng berwarna Kuning, 2 kelereng berwarna Merah. Sani akan mengambil satu kelereng secara acak. Pernyataan yang benar:", options:["A. Peluang Biru adalah 1/2.","B. Peluang Merah adalah 1/12.","C. Peluang Kuning adalah 1/3.","D. Peluang bukan Biru adalah 1/3."], correct:["A","B","C"], gambar:null},
+    {id:23, type:"pgk", text:"Dalam rangka ulang tahun, kotak berisi 20 bola nomor 1-20. Pernyataan yang benar:", options:["A. Peluang kelipatan 4 adalah 1/4.","B. Peluang bilangan prima adalah 2/5.","C. Peluang faktor dari 10 adalah 0,30.","D. Peluang ganjil lebih kecil dari genap."], correct:["A","B"], gambar:null},
+    {id:24, type:"pgk", text:"Siswa melempar dua koin secara bersamaan. Pernyataan yang benar:", options:["A. Ruang sampel = 4.","B. Peluang muncul kembar (AA/GG) = 1/2.","C. Peluang paling sedikit satu Angka = 1/4.","D. Peluang satu Angka satu Gambar = 3/4."], correct:["A","B"], gambar:null},
+    // No 26-30: Benar/Salah
+    {id:25, type:"bs", text:"Regu Garuda mendirikan tenda prisma segitiga. Alas segitiga lebar 2m, tinggi 1.5m, panjang tenda 3m.", statements:["Luas alas tenda tersebut adalah 1,5 m²","Volume total udara di dalam tenda adalah 4,5 m³","Jika panjang tenda ditambah menjadi 4 meter, maka volumenya menjadi 6 m³"], correct:["Benar","Benar","Benar"], gambar:null},
+    {id:26, type:"bs", text:"Andi membuat celengan tabung diameter 14 cm, tinggi 20 cm. (π=22/7)", statements:["Jari-jari kaleng yang digunakan Andi adalah 7 cm.","Luas kertas kado yang dibutuhkan untuk menyelimuti kaleng adalah 880 cm².","Volume celengan tersebut jika terisi penuh adalah lebih dari 3 liter."], correct:["Benar","Benar","Benar"], gambar:null},
+    {id:27, type:"bs", text:"Sebuah taman memiliki limas segi empat dengan sisi alas 10m, tinggi 12m.", statements:["Luas alas monumen tersebut adalah 100 m²","Volume monumen tersebut adalah 400 m³","Limas segi empat memiliki total 5 titik sudut dan 8 rusuk."], correct:["Benar","Salah","Benar"], gambar:null},
+    {id:28, type:"bs", text:"Petani mencatat hasil panen padi (ton): 6,8,7,9,10.", statements:["Rata-rata hasil panen selama 5 tahun adalah 8 ton.","Data tersebut tidak memiliki modus karena semua nilai muncul frekuensi sama.","Jika tahun ke-6 panen 8 ton, rata-rata keseluruhan akan menurun."], correct:["Benar","Benar","Salah"], gambar:null},
+    {id:29, type:"bs", text:"Kantong berisi 10 bola: 5 merah, 3 kuning, 2 hijau.", statements:["Peluang terambilnya bola merah adalah 1/2.","Peluang terambilnya bola hijau lebih besar daripada peluang terambilnya bola kuning.","Jumlah seluruh titik sampel dalam eksperimen ini adalah 10."], correct:["Benar","Salah","Benar"], gambar:null}
+];
+    
+    // Data siswa demo (offline fallback)
+    const demoStudents = {
+        "siswa1": { name: "Ahmad Fauzi", password: "123456" },
+        "siswa2": { name: "Siti Nurhaliza", password: "123456" },
+        "siswa3": { name: "Budi Santoso", password: "123456" }
+    };
+    
+    let questions = [];
+    // Perbaikan: Memetakan data soal dengan benar, memastikan ID unik dan tipe yang tepat
+    questionsData.forEach((q, idx) => {
+        let base = { 
+            id: idx, 
+            type: q.type, 
+            text: q.text, 
+            userAnswer: null, 
+            marked: false, 
+            gambar: q.gambar || null
+        };
+        if (q.type === "pg") { 
+            base.options = q.options; 
+            base.correct = q.correct; 
+            base.userAnswer = null; 
+        } else if (q.type === "pgk") { 
+            base.options = q.options; 
+            base.correct = q.correct; 
+            base.userAnswer = []; 
+        } else if (q.type === "bs") { 
+            base.statements = q.statements; 
+            base.correct = q.correct; 
+            base.userAnswer = Array(q.statements.length).fill(null); 
+        }
+        questions.push(base);
+    });
+    
+    let currentUser = null, examActive = false, timerInterval, timeSeconds = 3600, currentQuestionIdx = 0, violationDetected = false;
+    let studentsData = {};
+    
+    function showSuccessToast(msg){let t=document.createElement('div');t.className='success-toast';t.innerText=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),3000);}
+    function showViolationToast(msg){let t=document.createElement('div');t.className='violation-toast';t.innerText=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2000);}
+    function handleViolation(){if(!examActive||violationDetected)return;violationDetected=true;showViolationToast("⚠️ PERINGATAN! Ujian dihentikan.");if(timerInterval)clearInterval(timerInterval);examActive=false;setTimeout(()=>{alert("❌ Pelanggaran terdeteksi. Ujian tidak dapat dilanjutkan.");logout();},100);}
+    function initSecurity(){window.addEventListener('blur',()=>{if(examActive)handleViolation();});document.addEventListener('visibilitychange',()=>{if(document.hidden&&examActive)handleViolation();});document.addEventListener('contextmenu',(e)=>{if(examActive){e.preventDefault();showViolationToast("❌ Klik kanan tidak diizinkan!");}});}
+    initSecurity();
+    
+    async function callAPI(action, params = {}) {
+        try {
+            const url = new URL(API_URL);
+            url.searchParams.append('action', action);
+            Object.keys(params).forEach(k => {
+                url.searchParams.append(k, typeof params[k] === 'object' ? JSON.stringify(params[k]) : params[k]);
+            });
+            
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+            
+            const response = await fetch(url.toString(), { signal: controller.signal });
+            clearTimeout(timeoutId);
+            
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('API Error:', error);
+            return { success: false, error: error.message, offline: true };
+        }
+    }
+    
+    async function loadStudents() {
+        try {
+            const result = await callAPI('getStudents');
+            if (result.success && result.students) {
+                studentsData = result.students;
+                return true;
+            } else {
+                studentsData = demoStudents;
+                console.log('Using demo student data');
+                return true;
+            }
+        } catch (error) {
+            console.error('Load students error:', error);
+            studentsData = demoStudents;
+            return true;
+        }
+    }
+    
+    function startExam(){
+        violationDetected=false;
+        // Reset jawaban untuk semua tipe soal
+        questions.forEach(q => {
+            if (q.type === 'pg') q.userAnswer = null;
+            else if (q.type === 'pgk') q.userAnswer = [];
+            else if (q.type === 'bs') q.userAnswer = Array(q.statements.length).fill(null);
+            q.marked = false;
+        });
+        currentQuestionIdx = 0;
+        timeSeconds = 3600;
+        examActive = true;
+        document.getElementById('siswaDashboard').style.display = 'none';
+        document.getElementById('examArea').style.display = 'block';
+        if (timerInterval) clearInterval(timerInterval);
+        startTimer();
+        renderNavigationExam();
+        renderQuestionExam();
+    }
+    
+    function startTimer(){
+        let timerElement = document.getElementById('timer');
+        timerInterval = setInterval(() => {
+            if(!examActive) return;
+            if(timeSeconds <= 0){
+                clearInterval(timerInterval);
+                finishExam();
+                return;
+            }
+            timeSeconds--;
+            let m = Math.floor(timeSeconds / 60);
+            let s = timeSeconds % 60;
+            timerElement.textContent = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+            if(timeSeconds <= 300) timerElement.classList.add('warning');
+        }, 1000);
+    }
+    
+    function renderNavigationExam(){
+        let nav = document.getElementById('navAll');
+        nav.innerHTML = '';
+        let answeredCount = 0;
+        questions.forEach((q, idx) => {
+            let btn = document.createElement('button');
+            btn.className = 'nav-btn';
+            let isAnswered = false;
+            if (q.type === 'pg') isAnswered = q.userAnswer !== null;
+            else if (q.type === 'pgk') isAnswered = Array.isArray(q.userAnswer) && q.userAnswer.length > 0;
+            else if (q.type === 'bs') {
+                isAnswered = Array.isArray(q.userAnswer) && q.userAnswer.every(ans => ans !== null);
+            }
+            if (isAnswered) {
+                btn.classList.add('answered');
+                answeredCount++;
+            }
+            if (q.marked) btn.classList.add('marked');
+            if (idx === currentQuestionIdx) btn.classList.add('current');
+            btn.textContent = idx + 1;
+            btn.onclick = () => { currentQuestionIdx = idx; renderQuestionExam(); renderNavigationExam(); };
+            nav.appendChild(btn);
+        });
+        let progressFill = document.getElementById('progressFill');
+        if (progressFill) progressFill.style.width = (answeredCount / 30 * 100) + '%';
+    }
+    
+    function renderQuestionExam(){
+        let q = questions[currentQuestionIdx];
+        let imgPanel = document.getElementById('questionImagePanel');
+        if (q.gambar && currentQuestionIdx < 15) { // Hanya untuk PG yang punya gambar
+            imgPanel.innerHTML = `<img src="${q.gambar}" class="question-image" alt="Gambar soal" onerror="this.style.display='none'">`;
+        } else {
+            imgPanel.innerHTML = '';
+        }
+        document.getElementById('questionNumber').innerHTML = `Soal ${currentQuestionIdx + 1}/30`;
+        let typeText = '';
+        if (q.type === 'pg') typeText = 'Pilihan Ganda (Pilih satu)';
+        else if (q.type === 'pgk') typeText = '📌 Pilihan Ganda Kompleks (Boleh lebih dari satu)';
+        else typeText = '✅ Benar/Salah (Pilih pernyataan)';
+        document.getElementById('questionType').innerHTML = typeText;
+        document.getElementById('questionText').innerHTML = q.text;
+        let optsDiv = document.getElementById('optionsArea');
+        optsDiv.innerHTML = ''; // Clear sebelumnya
+        
+        if (q.type === 'pg') {
+            let html = '';
+            q.options.forEach((opt, idx) => {
+                let letter = String.fromCharCode(65 + idx);
+                let isSelected = (q.userAnswer === letter);
+                html += `<div class="option ${isSelected ? 'selected' : ''}" onclick="selectPG('${letter}')">${letter}. ${opt}</div>`;
+            });
+            optsDiv.innerHTML = html;
+        } else if (q.type === 'pgk') {
+            let html = '';
+            q.options.forEach((opt, idx) => {
+                let letter = String.fromCharCode(65 + idx);
+                let isSelected = (q.userAnswer && q.userAnswer.includes(letter));
+                html += `<div class="pgk-option ${isSelected ? 'selected' : ''}" onclick="togglePGK('${letter}')">${opt}</div>`;
+            });
+            optsDiv.innerHTML = html;
+        } else if (q.type === 'bs') {
+            let html = '';
+            q.statements.forEach((stmt, idx) => {
+                let currentVal = (q.userAnswer && q.userAnswer[idx]) || null;
+                html += `<div style="margin-bottom:20px;border-bottom:1px solid #ddd;padding-bottom:10px;">
+                            <strong>Pernyataan ${idx + 1}:</strong> ${stmt}<br>
+                            <div style="margin-top:8px;">
+                                <button class="truefalse-btn truefalse-true ${currentVal === 'Benar' ? 'truefalse-selected' : ''}" onclick="selectBS(${currentQuestionIdx}, ${idx}, 'Benar')">✓ Benar</button>
+                                <button class="truefalse-btn truefalse-false ${currentVal === 'Salah' ? 'truefalse-selected' : ''}" onclick="selectBS(${currentQuestionIdx}, ${idx}, 'Salah')">✗ Salah</button>
+                            </div>
+                        </div>`;
+            });
+            optsDiv.innerHTML = html;
+        }
+    }
+    
+    // Memperbaiki fungsi global dengan parameter soal dan indeks pernyataan
+    window.selectPG = (letter) => { 
+        questions[currentQuestionIdx].userAnswer = letter; 
+        renderQuestionExam(); 
+        renderNavigationExam(); 
+    };
+    
+    window.togglePGK = (letter) => { 
+        let q = questions[currentQuestionIdx]; 
+        if (!Array.isArray(q.userAnswer)) q.userAnswer = []; 
+        let idx = q.userAnswer.indexOf(letter); 
+        if (idx > -1) q.userAnswer.splice(idx, 1); 
+        else q.userAnswer.push(letter); 
+        renderQuestionExam(); 
+        renderNavigationExam(); 
+    };
+    
+    window.selectBS = (questionIdx, stmtIdx, val) => { 
+        let q = questions[questionIdx]; 
+        if (!Array.isArray(q.userAnswer)) q.userAnswer = Array(q.statements.length).fill(null); 
+        q.userAnswer[stmtIdx] = val; 
+        renderQuestionExam(); 
+        renderNavigationExam(); 
+    };
+    
+    document.getElementById('prevBtn').onclick = () => { if (currentQuestionIdx > 0) { currentQuestionIdx--; renderQuestionExam(); renderNavigationExam(); } };
+    document.getElementById('nextBtn').onclick = () => { if (currentQuestionIdx < 29) { currentQuestionIdx++; renderQuestionExam(); renderNavigationExam(); } };
+    document.getElementById('markBtn').onclick = () => { questions[currentQuestionIdx].marked = !questions[currentQuestionIdx].marked; renderNavigationExam(); };
+    document.getElementById('finishBtn').onclick = () => {
+        let answered = questions.filter(q => {
+            if (q.type === 'pg') return q.userAnswer !== null;
+            else if (q.type === 'pgk') return Array.isArray(q.userAnswer) && q.userAnswer.length > 0;
+            else if (q.type === 'bs') return Array.isArray(q.userAnswer) && q.userAnswer.every(ans => ans !== null);
+            return false;
+        }).length;
+        const confirmStatsDiv = document.getElementById('confirmStats');
+        if (confirmStatsDiv) confirmStatsDiv.innerHTML = `<p>📊 Sudah dijawab: ${answered}/30</p><p class="warning-text">⚠️ Soal yang belum dijawab akan dianggap salah.</p>`;
+        document.getElementById('confirmModal').style.display = 'flex';
+    };
+    document.getElementById('confirmYes').onclick = () => { document.getElementById('confirmModal').style.display = 'none'; finishExam(); };
+    document.getElementById('confirmNo').onclick = () => { document.getElementById('confirmModal').style.display = 'none'; };
+    
+    async function finishExam(){
+        if (violationDetected) { alert("❌ Ujian tidak dapat diselesaikan karena pelanggaran."); logout(); return; }
+        examActive = false;
+        if (timerInterval) clearInterval(timerInterval);
+        
+        let correct = 0;
+        questions.forEach((q, idx) => {
+            if (q.type === 'pg') {
+                if (q.userAnswer === q.correct[0]) correct++;
+            } else if (q.type === 'pgk') {
+                let correctSet = new Set(q.correct);
+                let userSet = new Set(q.userAnswer || []);
+                let isEqual = (userSet.size === correctSet.size && [...userSet].every(v => correctSet.has(v)));
+                if (isEqual) correct++;
+            } else if (q.type === 'bs') {
+                let isCorrect = true;
+                for (let i = 0; i < q.correct.length; i++) {
+                    if ((q.userAnswer[i] || '') !== q.correct[i]) { isCorrect = false; break; }
+                }
+                if (isCorrect) correct++;
+            }
+        });
+        let score = Math.round((correct / 30) * 100);
+        
+        try {
+            await callAPI('saveExam', {
+                username: currentUser.username,
+                score: score,
+                correctCount: correct,
+                results: JSON.stringify([])
+            });
+        } catch(e) { console.log('Save error:', e); }
+        
+        document.getElementById('examArea').style.display = 'none';
+        const dashboard = document.getElementById('siswaDashboard');
+        dashboard.style.display = 'block';
+        // Memperbaiki: Membangun ulang dashboard dengan nilai akhir
+        dashboard.innerHTML = `
+            <div class="info-ujian">✅ Terima kasih, ${currentUser.name}! Ujian telah selesai.</div>
+            <div class="stats-grid" id="finalScoreGrid">
+                <div class="stat-card" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">
+                    <div class="stat-number">${score}</div>
+                    <div>Nilai Akhir</div>
+                </div>
+                <div class="stat-card" style="background: linear-gradient(135deg, #2980b9, #3498db);">
+                    <div class="stat-number">${correct}</div>
+                    <div>Benar dari 30 Soal</div>
+                </div>
+            </div>
+            <h3>📊 Ringkasan Ujian</h3>
+            <p>✅ Anda telah menyelesaikan ujian Matematika.</p>
+            <button class="btn-primary" onclick="logout()">🏠 Kembali ke Login</button>
+        `;
+        showSuccessToast(`✅ Ujian selesai! Nilai Anda: ${score}`);
+    }
+    
+    async function login() {
+        let username = document.getElementById('username').value.trim();
+        let password = document.getElementById('password').value;
+        let loginBtn = document.getElementById('loginBtn');
+        let errorDiv = document.getElementById('loginError');
+        
+        if(!username || !password) {
+            errorDiv.textContent = 'Username dan password harus diisi!';
+            return;
+        }
+        
+        loginBtn.disabled = true;
+        loginBtn.innerHTML = '<span class="loading-spinner"></span> Memproses...';
+        errorDiv.textContent = '';
+        
+        try {
+            // Login guru
+            if(username === 'guru' && password === 'admin123') {
+                currentUser = {username:'guru', role:'guru', name:'Guru'};
+                document.getElementById('loginPage').style.display='none';
+                document.getElementById('appContainer').style.display='block';
+                document.getElementById('guruDashboard').style.display='block';
+                document.getElementById('examArea').style.display='none';
+                document.getElementById('siswaDashboard').style.display='none';
+                document.getElementById('displayName').innerHTML='👩‍🏫 Guru';
+                document.getElementById('roleDisplay').innerHTML='👩‍🏫 Guru';
+                loginBtn.disabled = false; // Perbaikan: 'disabled' bukan 'able'
+                loginBtn.innerHTML = 'Masuk & Mulai Ujian';
+                return;
+            }
+            
+            // Load data siswa (dengan fallback ke demo)
+            await loadStudents();
+            
+            // Cek login siswa
+            if(studentsData[username] && studentsData[username].password === password) {
+                currentUser = {
+                    username: username,
+                    role: 'siswa',
+                    name: studentsData[username].name || username
+                };
+                document.getElementById('loginPage').style.display='none';
+                document.getElementById('appContainer').style.display='block';
+                document.getElementById('siswaDashboard').style.display='block';
+                document.getElementById('guruDashboard').style.display='none';
+                document.getElementById('examArea').style.display='none';
+                document.getElementById('displayName').innerHTML=`👤 ${currentUser.name}`;
+                document.getElementById('roleDisplay').innerHTML='👨‍🎓 Siswa';
+                
+                // Update dashboard siswa
+                document.getElementById('siswaDashboard').innerHTML=`
+                    <div class="info-ujian">📝 Selamat datang, ${currentUser.name}! Silakan mulai ujian Matematika.</div>
+                    <div id="finalScoreText">
+                        <div class="stat-card" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+                            <div class="stat-number">-</div>
+                            <div>Belum Ujian</div>
+                        </div>
+                    </div>
+                    <h3>📋 Ujian Matematika</h3>
+                    <p>✅ Terdapat 30 soal dengan waktu 60 menit.</p>
+                    <p>⚠️ Jenis Soal: PG (1-15), PGK (16-25), Benar/Salah (26-30)</p>
+                    <p class="warning-text">⚠️ PERHATIAN: Dilarang berpindah tab atau aplikasi selama ujian! Pelanggaran akan menghentikan ujian.</p>
+                    <button class="btn-primary" onclick="startExam()">🎯 Mulai Ujian Sekarang</button>
+                `;
+                loginBtn.disabled = false;
+                loginBtn.innerHTML = 'Masuk & Mulai Ujian';
+            } else {
+                errorDiv.textContent = 'Username atau password salah! Gunakan demo: siswa1/123456, siswa2/123456, siswa3/123456';
+                loginBtn.disabled = false;
+                loginBtn.innerHTML = 'Masuk & Mulai Ujian';
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+            errorDiv.textContent = 'Gagal terhubung. Gunakan data demo: siswa1/123456';
+            loginBtn.disabled = false;
+            loginBtn.innerHTML = 'Masuk & Mulai Ujian';
+        }
+    }
+    
+    function logout(){
+        if(timerInterval) clearInterval(timerInterval);
+        examActive=false;
+        violationDetected=false;
+        document.getElementById('loginPage').style.display='flex';
+        document.getElementById('appContainer').style.display='none';
+        document.getElementById('username').value='';
+        document.getElementById('password').value='';
+        document.getElementById('loginError').textContent='';
+        // Reset dashboard siswa agar tidak error saat login ulang
+        const siswaDashboard = document.getElementById('siswaDashboard');
+        if (siswaDashboard) siswaDashboard.innerHTML = '...';
+    }
+    
+    // Load data siswa saat halaman dimuat
+    loadStudents().catch(console.error);
+</script>
+</body>
+</html>
